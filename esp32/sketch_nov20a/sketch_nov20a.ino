@@ -1,3 +1,4 @@
+/*该代码为ESP32模块上云，使用arduino开发。云平台为阿里云*/
 #include <Arduino.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
@@ -5,16 +6,16 @@
 #include <time.h>
 
 /* 网络配置 */
-#define WIFI_SSID         "123"
-#define WIFI_PASSWD       "s72ccjiy"
+#define WIFI_SSID         "替换为你的Wi-Fi"
+#define WIFI_PASSWD       "替换为你的密码"
 
-/* 设备三元组信息 */
-#define PRODUCT_KEY       "k1wxakcs6OI"
-#define DEVICE_NAME       "DHT11"
-#define DEVICE_SECRET     "bc073a07f86537380f76ddd44307b28d"
+/* 设备三元组信息 以阿里云平台为例 */
+#define PRODUCT_KEY       "Your ProductKey"
+#define DEVICE_NAME       "Your DeviceName"
+#define DEVICE_SECRET     "Your DeviceSecret"
 
 /* MQTT服务器配置 */
-#define MQTT_SERVER       "k1wxakcs6OI.iot-as-mqtt.cn-shanghai.aliyuncs.com"
+#define MQTT_SERVER       "Your ProductKey.iot-as-mqtt.cn-shanghai.aliyuncs.com"
 #define MQTT_PORT         1883
 #define MQTT_KEEPALIVE    60
 
